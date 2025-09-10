@@ -1,0 +1,53 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;
+    background: #f4f4f9;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+form input, form button {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background:#9AA83E;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #6B752B;
+}
+
+#mensagem {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #A1A871;
+}
+
+#listaReservas {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+}
