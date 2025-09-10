@@ -44,5 +44,5 @@ def listar_reservas():
         "status": r.status
     } for r in reservas])
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     app.run(debug=True)
