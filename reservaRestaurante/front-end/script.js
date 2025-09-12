@@ -1,3 +1,4 @@
+// coração do seu front-end
 async function carregarReservas() {
     const resp = await fetch("http://127.0.0.1:5000/reservas");
     const reservas = await resp.json();
