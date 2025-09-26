@@ -17,13 +17,44 @@
     </form>
     <p id="mensagem"></p>
 
-    <!-- <h2>Reservas</h2>
-    <ul id="listaReservas"></ul>  -->
+    <h1>Reservas</h1>
+    <table id="tabelaReservas">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Cliente</th>
+                <th>Telefone</th>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Nº Pessoas</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Modal de edição -->
+    <div id="modal-edicao" class="modal">
+        <div class="modal-conteudo">
+            <h2>Editar Reserva</h2>
+            <input type="hidden" id="reserva-id">
+            <label>Nome Cliente: <input type="text" id="nome_cliente_edit"></label>
+            <label>Telefone: <input type="text" id="telefone_cliente_edit"></label>
+            <label>Data: <input type="date" id="data_edit"></label>
+            <label>Hora: <input type="time" id="hora_edit"></label>
+            <label>Nº Pessoas: <input type="number" id="numero_pessoas_edit"></label>
+            <label>Status:
+                <select id="status_edit">
+                    <option value="confirmada">Confirmada</option>
+                    <option value="cancelada">Cancelada</option>
+                </select>
+            </label>
+            <button class="botao-salvar" onclick="salvarEdicao()">Salvar</button>
+            <button class="botao-cancelar" onclick="fecharModal()">Cancelar</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
-
-
-
-   <a href="admin.html" class="botao-admin" target="_blank">Entrar como admin</a>
 </body>
 </html>
